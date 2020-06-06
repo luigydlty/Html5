@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css3/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="Index.html"><img src="imagenes/Logo1svg.svg" alt="Logo 40e Marketing"></a>
+        </div>
+				<nav>
+                    <ul>
+                        <li><a href="Index.html">INICIO</a></li>
+                        <li><a href="ejercicios.html">EJERCICIOS HTML</a></li>
+                        <li><a href="contacto.html" class="current">CONTÁCTENOS</a></li>      
+                    </ul>
+			</nav>
+	</header> 
+    <main>
+        <div class="contenedor">
+            <form action="" class="form">
+                <div class="form-header">
+                    <h1 class="form-title">C<span>ontáctenos</span></h1>
+                </div>
+                    <label for="nombre" class="form-label">Nombre y Apellido</label>
+                    <input type="text" id="nombre"   class="form-input" placeholder="Escriba su Nombre y Apellido" required>
+                    <label for="telefono" class="form-label">Celular</label>
+                    <input type="tel" id="telefono" class="form-input" placeholder="Escriba su número de Celular" required>
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="correo"   class="form-input" placeholder="Escriba su Correo" required>
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" class="form-textarea" placeholder="Escriba su Mensaje Aquí" required></textarea>
+                    <input type="submit" onclick="submitform(); return false;" class="btn-submit" value="Enviar">
+            </form>
+        </div>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=573016886267&text=%C2%A1Hola!%20Acabo%20de%20dar%20clic%20en%20el%20bot%C3%B3n%20para%20contactarlos%20por%20whatsapp.%20Mi%20nombre%20es:" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    </main>
+    </body>
+</html>
